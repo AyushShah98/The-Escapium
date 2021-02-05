@@ -1,0 +1,67 @@
+<html>
+<body>
+	
+<div><p class="text"> <b>You take rest near a tree.<br><br>
+	You wake up after a while unable to sleep due to the cold and wet.<br>what do you want to do?</b><p></<div>
+
+
+<button style="margin:150px;" onclick="myFunction()" class="but">Wait</button>
+<button style="margin:75px;" onclick="window.location.href='choice2.html' " class="but">Look around</button>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = Math.floor((Math.random() * 10) + 1);
+  document.getElementById("demo").innerHTML = x;
+if (x < 7) {
+window.open("dhyper.html","_self");
+
+}else if(x >=7 ){
+window.open("wait.html","_self");
+}
+}
+</script>
+
+
+
+
+
+
+<style>
+	body{
+		background-color: rgba(0,0,0,.5);
+				lighting-color: blue;
+
+	}
+	.but{
+		font-family: Papyrus;
+		font-size:50px;
+		lighting-color: blue;
+		color:rgba(0,0,0,.5);
+		background-blend-mode: saturation;
+
+
+	}
+
+	.text{
+		font-family: Papyrus;
+		font-size:50px;
+
+	}
+
+</style>
+
+<script>
+		var audio=new Audio('https://raw.githubusercontent.com/Satwik999/mscbda/master/choice1.mp3');
+		audio.play();
+	</script>
+
+
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,64 @@
+<html>
+<body>
+	
+<div><p class="text"> <b><html>
+<body>
+	
+<div><p class="text"> <b>You look for surviours in the island but find no one. It's a deserted island and you start building S.O.S signal from the rock nearby.<br> You start getting hungry and Thristy.<br><br> What do you plan to do next?</b><p></<div>
+
+
+<button style="margin:75px;" onclick="window.location.href='food.html' " class="but">Look for Food</button>
+
+<button style="margin:150px;" onclick="myFunction()" class="but">Rest for a while</button>
+
+<script>
+function myFunction() {
+  var x = Math.floor((Math.random() * 10) + 1);
+  document.getElementById("demo").innerHTML = x;
+if (x < 7) {
+window.open("dead.html","_self");
+
+}else if(x >=7 ){
+window.open("food.html","_self");
+}
+}
+</script>
+
+
+
+
+<style>
+	body{
+		background-color: rgba(0,0,0,.5);
+				lighting-color: blue;
+
+	}
+	.but{
+		font-family: Papyrus;
+		font-size:50px;
+		lighting-color: blue;
+		color:rgba(0,0,0,.5);
+		background-blend-mode: saturation;
+
+
+	}
+
+	.text{
+		font-family: Papyrus;
+		font-size:30px;
+
+	}
+
+</style>
+
+<script>
+		var audio=new Audio('https://raw.githubusercontent.com/Satwik999/mscbda/master/choice1.mp3');
+		audio.play();
+	</script>
+
+
+</body>
+
+</html>
+
+

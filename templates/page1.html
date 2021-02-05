@@ -1,0 +1,62 @@
+<html>
+<body>
+	
+<div><p class="text"> <b>You wake up in pain, finding yourself on the shore of an island. Trying to recall what happened, you realize that your ship hit an iceberg and sinked but you somehow survived. You spot box of supplies at a distance floating away in the ocean.<br>
+Will you take a risk to get it?</b><p></<div>
+
+
+<button style="margin:150px;" onclick="myFunction()" class="but">Take the risk</button>
+<button style="margin:75px;" onclick="window.location.href='page4.html' " class="but">try screaming for help</button>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = Math.floor((Math.random() * 10) + 1);
+  document.getElementById("demo").innerHTML = x;
+if (x > 5) {
+window.open("page2.html","_self");
+
+}else if(x < 5){
+window.open("page3.html","_self");
+}
+}
+</script>
+
+<style>
+	body{
+		background-color: rgba(0,0,0,.5);
+				lighting-color: blue;
+
+	}
+	.but{
+		font-family: Papyrus;
+		font-size:50px;
+		lighting-color: blue;
+		color:rgba(0,0,0,.5);
+		background-blend-mode: saturation;
+
+
+	}
+
+	.text{
+		font-family: Papyrus;
+		font-size:50px;
+
+	}
+
+</style>
+
+<script>
+		var audio=new Audio('https://raw.githubusercontent.com/Satwik999/mscbda/master/choice1.mp3');
+		audio.play();
+	</script>
+
+
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,61 @@
+<html>
+<body>
+	
+<div><p class="text"> <b>You searched the island for a few more resources but it started getting dark and cold.</b><p></<div>
+
+
+<button style="margin:150px;" onclick="myFunction()" class="but">Keep on Exploring</button>
+<button style="margin:75px;" onclick="window.location.href='wait2.html' " class="but">Return to the camp</button>
+
+
+
+<script>
+function myFunction() {
+  var x = Math.floor((Math.random() * 10) + 1);
+  document.getElementById("demo").innerHTML = x;
+if (x < 8) {
+window.open("dhyper.html","_self");
+
+}else if(x >=8 ){
+window.open("explore1.html","_self");
+}
+}
+</script>
+
+
+<style>
+	body{
+		background-color: rgba(0,0,0,.5);
+				lighting-color: blue;
+
+	}
+	.but{
+		font-family: Papyrus;
+		font-size:50px;
+		lighting-color: blue;
+		color:rgba(0,0,0,.5);
+		background-blend-mode: saturation;
+
+
+	}
+
+	.text{
+		font-family: Papyrus;
+		font-size:30px;
+
+	}
+
+</style>
+
+<script>
+		var audio=new Audio('https://raw.githubusercontent.com/Satwik999/mscbda/master/choice1.mp3');
+		audio.play();
+	</script>
+
+
+</body>
+
+</html>
+
+
+

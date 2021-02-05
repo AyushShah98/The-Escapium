@@ -1,0 +1,94 @@
+<html>
+<body>
+	
+<div><p class="text"> <b>You are hungry.You started looking for food and water and luckily you found some.But you are unaware of the vegetation that grows nearby.<br>what do you want to do?</b><p></<div>
+
+
+<button style="margin:50px;" onclick="myFunction()" class="but">Try eating the food</button>
+<button style="margin:50px;" onclick="myFunction1()" class="but">starve</button>
+<button style="margin:50px;" onclick="myFunction2()" class="but">Drink sea water</button>
+
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = Math.floor((Math.random() * 10) + 1);
+  document.getElementById("demo").innerHTML = x;
+if (x < 4) {
+window.open("dead.html","_self");
+
+}else if(x >=4 ){
+window.open("rest.html","_self");
+}
+}
+</script>
+
+
+<script>
+function myFunction1() {
+  var x = Math.floor((Math.random() * 10) + 1);
+  document.getElementById("demo").innerHTML = x;
+if (x < 8) {
+window.open("dead.html","_self");
+
+}else if(x >=8 ){
+window.open("rest.html","_self");
+}
+}
+</script>
+
+
+<script>
+function myFunction2() {
+  var x = Math.floor((Math.random() * 10) + 1);
+  document.getElementById("demo").innerHTML = x;
+if (x < 8) {
+window.open("dead.html","_self");
+
+}else if(x >=8 ){
+window.open("rest.html","_self");
+}
+}
+</script>
+
+
+
+
+<style>
+	body{
+		background-color: rgba(0,0,0,.5);
+				lighting-color: blue;
+
+	}
+	.but{
+		font-family: Papyrus;
+		font-size:50px;
+		lighting-color: blue;
+		color:rgba(0,0,0,.5);
+		background-blend-mode: saturation;
+
+
+	}
+
+	.text{
+		font-family: Papyrus;
+		font-size:50px;
+
+	}
+
+</style>
+
+<script>
+		var audio=new Audio('https://raw.githubusercontent.com/Satwik999/mscbda/master/choice1.mp3');
+		audio.play();
+	</script>
+
+
+</body>
+
+</html>
+
+
+
